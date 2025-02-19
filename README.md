@@ -1,12 +1,14 @@
 # CyberDefenders-PhishStrike-Challenge-Walkthrough
 CyberDefenders — PhishStrike Challenge Walkthrough
 
-Intro:
+INTRO:
+
 This repository documents my experience tackling the CyberDefenders.org "PhishStrike" challenge, which focuses on analyzing a phishing email and associated malware samples. The challenge involved tasks such as dissecting email headers, identifying malicious URLs and IP addresses, analyzing malware behavior in sandboxed environments, and uncovering command and control infrastructure. Through this hands-on exercise, I gained practical experience in threat hunting, malware analysis, and understanding common attack vectors used in phishing campaigns. The documented steps include clear explanations and references to the tools and resources used throughout the analysis process, providing a comprehensive overview of the techniques and insights gained from the challenge.
 
 Here is the link for the following challenge: https://cyberdefenders.org/blueteam-ctf-challenges/phishstrike/
 
-Scenario:
+SCEANRIO:
+
 As a cybersecurity analyst at an educational institution, you receive an alert about a phishing email targeting faculty members. The email appears to be from a trusted contact and claims a $625,000 purchase, providing a link to download an invoice.
 Your task is to investigate the email using Threat Intel tools. Analyze the email headers and inspect the link for malicious content. Identify any Indicators of Compromise (IOCs) and document your findings to prevent potential fraud and educate faculty on phishing recognition.
 To perfom comphrensive analysis we will use accessory tools such as:
@@ -26,6 +28,7 @@ And hey, if you find this walkthrough helpful — whether it levels-up your skil
 Thanks and let's get going with the investigation!
 
 !BEFORE STARTING!:
+
 Safety first! When working with lab/challenge files from CyberDefenders (or any educational lab/challenge/range), it’s important to be responsible and stay safe by interacting with potentially malicious files in a dedicated, isolated virtual machine environment. I deeply suggest to either download the file from a comparmentalized VM segregated from you main network or go for REMnux, a specialized Linux distribution for malware analysis. Below the link to the relevant documentation and how to download and set it up in your preferred VM.
 [https://docs.remnux.org/install-distro/get-virtual-appliance?source=post_page-----756553475c73---------------------------------------]
 
@@ -133,6 +136,7 @@ In the task section, under "Behavioral," scroll to the network area. Identify th
 
 
 CONCLUSION
+
 Great job on completing the PhishStrike challenge! Starting with a single email, we utilized MXToolBox to investigate a spoofed trusted contact and uncovered a suspicious URL within the email body. By leveraging tools like URLhaus and VirusTotal, we gathered threat intelligence on three different malware samples delivered by the malicious server, allowing us to analyze their behaviors comprehensively. Additionally, we consulted external reports to understand potential data exfiltration methods. With our objectives met, we now possess the crucial information needed to safeguard our institution from this threat. Let’s wrap up the PhishStrike challenge!
 
 I'd like to thank CyberDefenders for creating such an engaging and realistic lab scenario. This challenge provided a fantastic opportunity to sharpen investigative skills, starting with minimal information and expanding into a thorough analysis. It’s always rewarding to connect the dots between artifacts, tools, and external research to uncover the full scope of a threat. In real-world scenarios, where speed and accuracy are critical, platforms like VirusTotal and URLhaus prove invaluable for identifying and mitigating threats efficiently. Exercises like this are not just practice—they’re essential preparation for the challenges we face every day in cybersecurity.
