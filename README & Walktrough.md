@@ -7,7 +7,7 @@ This repository documents my experience tackling the CyberDefenders.org "PhishSt
 
 Here is the link for the following challenge: https://cyberdefenders.org/blueteam-ctf-challenges/phishstrike/
 
-SCEANRIO:
+SCENARIO:
 
 As a cybersecurity analyst at an educational institution, you receive an alert about a phishing email targeting faculty members. The email appears to be from a trusted contact and claims a $625,000 purchase, providing a link to download an invoice.
 Your task is to investigate the email using Threat Intel tools. Analyze the email headers and inspect the link for malicious content. Identify any Indicators of Compromise (IOCs) and document your findings to prevent potential fraud and educate faculty on phishing recognition.
